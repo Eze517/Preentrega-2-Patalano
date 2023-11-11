@@ -1,9 +1,10 @@
 *{
-    margin: 1;
-    padding: 1 ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
-background-color: rgb(241, 182, 72);
+background-color: rgb(255, 214, 103);
 font-family:"junge-regular";
 }
 @font-face {
@@ -18,25 +19,9 @@ header {
 }
 .descripcion{
     font-size:1.5rem;
-}
-.barra{
-    list-style: none;
-    margin: 10px;
-}
-.barra li {
-    display: inline-block;
-    text-align: center;
-}
-.barra li a{
-    text-decoration: none;
-    display: inline-block;
-    margin: 15px;
-    padding: 20px;
-}
-.barra li a:hover{
-    color: dimgrey;
-    background-color: brown;
-    border-radius: 15%;
+}    
+.gym{
+    width: 100%;
 }
 .cuerpo {
     list-style: none;
@@ -57,7 +42,7 @@ header {
     width: 450px;
     margin: 25px;
 }
-.contenedortiktok{
+.contenedorTiktok{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -82,9 +67,45 @@ footer {
     width: 70px;
 }
 .fondoPerso{
-    background-color: rgb(109, 107, 105);
+    background-color: rgb(128, 171, 236);
+    text-align: center;
+}
+
+.navMia{
+    text-align: center;
+}
+.navMia li{
+    text-align: center;
+}
+.navMia li a {
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
 .breadcrumb{
     margin: 50px;
 }
-
+.row{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+h3{
+    background-color: rgb(250, 232, 202);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.form{
+    background-color: rgb(216, 204, 204);
+    text-align: center;
+    width: 50% auto;
+    margin: 10px;
+    padding: 10px;
+}
+main{
+    text-align: center;
+}
