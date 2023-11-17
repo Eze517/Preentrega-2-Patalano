@@ -9,13 +9,15 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/estilo.css">
     <title>Trabaja con nosotros</title>
+    <meta name="description" content="Sumate al equipo de trabajo de personal gym. Forma parte de un grupo de profesores apasionados por la enseñanza y la vida sana. Completa el forumlario y dejanos tus datos.">
+    <meta name="keywords" content="Gym, entrena, entrenamiento, equipo, forma parte, sumate, formulario, profesores, enseñanza, pasion">
 </head>
 
 <body>
     <header>
-        <div class="img">
+        <div>
             <a href="../index.html">
-                <img src="../Logos/the.png" id="top" alt="logo" width="180px">
+                <img class="img" src="../Logos/the.png" id="top" alt="logo">
             </a>
         </div>
         <h1>
@@ -64,71 +66,74 @@
                     <img class="gym" src="../Imagenes/profes feliz.avif" alt="Grupo de profesores">
                 </div>
             </div>
-            <h3>Forma parte de nuestro equipo, acepta el desafio</h3>
-            <form action class="form">
-                <div>
-                    <label for="name">Escribe tu nombre</label>
-                    <input type="text" name="name">
-                </div>
-                <br>
-                <div>
-                    <label for="surname">Escribe tu apellido</label>
-                    <input type="text" name="surname">
-                </div>
-                <br>
-                <div>
-                    <label for="mail">*Email adress</label>
-                    <input type="email" name="mail" required>
-                </div>
-                <br>
-                <div>
-                    <label for="nac">Fecha de nacimiento</label>
-                    <input type="date" name="nac">
-                </div>
-                <br>
-                <div>
-                    <label for="Pais">Elige tu nacionalidad</label>
-                    <select name="Pais" id="">
-                        <option value="arg">Argentina</option>
-                        <option value="uy">Uruguay</option>
-                        <option value="cl">Chile</option>
-                        <option value="br">Brasil</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <label for="sex">Genero</label>
-                    <input type="radio" name="sex" value="mujer">Mujer
-                    <input type="radio" name="sex" value="hombre">Hombre
-                    <input type="radio" name="nb" value="no binario">No binario
-                </div>
-                <br>
-                <div>
-                    <label for="terminos">Acepto terminos y condiciones</label>
-                    <input type="checkbox" name="Terminos">
-                </div>
-                <br>
-                <div>
-                    <label for="comentarios">Escribe tu consulta</label>
+            <div class="equipo">
+                <h3>Forma parte de nuestro equipo, acepta el desafio
+                </h3>
+                <form action class="form">
+                    <div>
+                        <label for="name">Escribe tu nombre</label>
+                        <input type="text" name="name">
+                    </div>
                     <br>
-                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-                </div>
-                <br>
-                <div>
-                    <input type="submit" value="Enviar datos">
-                    <input type="reset" value="Borrar formulario" id="Borrar formulario">
-                </div>
-            </form>
-            <h2>Somos un grupo de profesores apasionados que fomenta la buena onda, la salud y el entrenamiento.</h2>
+                    <div>
+                        <label for="surname">Escribe tu apellido</label>
+                        <input type="text" name="surname">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="mail">*Email adress</label>
+                        <input type="email" name="mail" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="nac">Fecha de nacimiento</label>
+                        <input type="date" name="nac">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Pais">Elige tu nacionalidad</label>
+                        <select name="Pais" id="">
+                            <option value="arg">Argentina</option>
+                            <option value="uy">Uruguay</option>
+                            <option value="cl">Chile</option>
+                            <option value="br">Brasil</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="sex">Genero</label>
+                        <input type="radio" name="sex" value="mujer">Mujer
+                        <input type="radio" name="sex" value="hombre">Hombre
+                        <input type="radio" name="nb" value="no binario">No binario
+                    </div>
+                    <br>
+                    <div>
+                        <label for="terminos">Acepto terminos y condiciones</label>
+                        <input type="checkbox" name="Terminos">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="comentarios">Escribe tu consulta</label>
+                        <br>
+                        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Enviar datos">
+                        <input type="reset" value="Borrar formulario" id="Borrar formulario">
+                    </div>
+                </form>
+            </div>
+            <h3>Somos un grupo de profesores apasionados que fomenta la buena onda, la salud y el entrenamiento.</h3>
         </div>
     </main>
     <footer>
         <ul class="terminos">
-            <li>Todos los derechos reservados </li>
-            <li>Pase de prueba </li>
             <li> RRHH </li>
-            <li> Términos y condiciones </li>
+            <li>Pase de prueba </li>
+            <li>Términos y condiciones </li>
+            <li>Todos los derechos reservados </li>
         </ul>
         <a href="http://www.instagram.com" target="_blank"><img class="icon" src="../Logos/icons8-instagram-48.png"
                 alt="Logo de instagram"></a>
@@ -138,10 +143,11 @@
             <ol class="breadcrumb d-flex text-center mx-auto">
                 <li class="breadcrumb-item mx-auto"><a href="../index.html">Inicio</a></li>
                 <li class="breadcrumb-item mx-auto"><a href="./quienessomos.html">Quienes somos</a></li>
-                <li class="breadcrumb-item mx-auto"><a href="./nutricionyentrenamientos.html">Nutricion y entrenamiento</a>
+                <li class="breadcrumb-item mx-auto"><a href="./nutricionyentrenamientos.html">Nutricion y
+                        entrenamiento</a>
                 </li>
                 <li class="breadcrumb-item mx-auto"><a href="./planesyprecios.html">Planes y precios</a></li>
-                <li class="breadcrumb-item mx-auto"><a href="./trabajaconnosotros.html">Trabaja con nosotros</a></li>
+                <li class="breadcrumb-item mx-auto"><a href="./trabajaconnosotros.html">Trabajá con nosotros</a></li>
             </ol>
         </nav>
     </footer>

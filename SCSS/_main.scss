@@ -1,0 +1,55 @@
+/* index-main*/
+
+.presentacion {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "rutina tiktok";
+}
+
+.contenedor {
+    justify-content: center;
+    align-content: center;
+}
+
+.rutina {
+    align-self: center;
+    justify-self: center;
+    grid-area: rutina;
+}
+
+.tiktok {
+    width: 450px;
+    margin: 25px;
+    text-align: center;
+    grid-area: tiktok;
+}
+
+@media screen and (max-width: 768px) {
+    .presentacion {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "rutina tiktok";
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .presentacion {
+        grid-template-columns: 1fr;
+        grid-template-areas: "rutina" "tiktok";
+    }
+}
+
+.contenedorCentral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h3 {
+    background-color: rgba(250, 250, 250, 0.1);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
