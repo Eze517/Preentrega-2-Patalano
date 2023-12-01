@@ -1,48 +1,43 @@
-.gym {
-    width: 100%;
-}
-
-.cuerpo {
-    list-style: none;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 5px;
-    padding: 10px;
-}
-
-/*planes y precios main*/
-
-.anime {
-    list-style: none;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 5px;
-    padding: 10px;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: pro;
-}
-
-@keyframes pro {
-    0% {
-        opacity: 0;
+planes y precios{
+    .anime {
+        list-style: none;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 5px;
+        padding: 10px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: pro;
+        
+        @keyframes pro {
+            0% {
+                opacity: 0;
+            }
+        
+            50% {
+                opacity: 1;
+            }
+        
+            100% {
+                opacity: 0;
+            }
+        }
     }
 
-    50% {
-        opacity: 1;
+    .cuerpo {
+        list-style: none;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 5px;
+        padding: 10px;
     }
-
-    100% {
-        opacity: 0;
-    }
+    .entrena {
+        list-style: none;
+        font-size: 1.5rem;
+        margin: 5px;
+        text-align: center;
+        padding: 10px;
+    }    
+      
 }
 
-/* Nose a que pertenece*/
-
-.entrena {
-    list-style: none;
-    font-size: 1.5rem;
-    margin: 5px;
-    text-align: center;
-    padding: 10px;
-}

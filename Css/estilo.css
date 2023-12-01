@@ -14,75 +14,77 @@ body {
   font-family: "junge-regular";
   src: url("../fuente/Junge-Regular.ttf"); }
 
-.fondoPerso {
-  background: linear-gradient(#1616c9, #808080);
-  text-align: center; }
-
-.navMia {
-  text-align: center; }
-  .navMia li {
-    text-align: center; }
-    .navMia li a {
-      text-align: center;
-      color: #ffffff;
-      font-weight: bold; }
-
 header {
   text-align: center;
   border-bottom: 1px solid black;
   padding: 10px 20px;
   font-size: 1rem; }
-
-.img {
-  width: 15%;
-  border-radius: 50%;
-  text-align: center;
-  transition: all 2s; }
-  .img:hover {
-    transform: scale(1.1, 1.1); }
-
-.descripcion {
-  font: size 1.5rem; }
+  header .img {
+    width: 15%;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 2s; }
+    header .img:hover {
+      transform: scale(1.1, 1.1); }
+  header .descripcion {
+    font: size 1.5rem; }
+  header .fondoPerso {
+    background: linear-gradient(#1616c9, #808080);
+    text-align: center; }
+  header .navMia {
+    text-align: center; }
+    header .navMia li {
+      text-align: center; }
+      header .navMia li a {
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold; }
 
 footer {
   text-align: center;
   font-size: 1rem;
   border-top: solid 1px black; }
-
-.terminos {
-  list-style: none;
-  font-size: 1rem; }
-
-.icon {
-  width: 40px; }
-
-.breadcrumb {
-  margin: 50px; }
+  footer .terminos {
+    list-style: none;
+    font-size: 1rem; }
+  footer .icon {
+    width: 40px; }
+  footer .breadcrumb {
+    margin: 50px; }
 
 /* index-main*/
-.presentacion {
+main h3 {
+  background-color: rgba(250, 250, 250, 0.1);
+  text-align: center;
+  padding: 10px;
+  margin: 10px; }
+
+main .presentacion {
   display: grid;
   width: 100%;
   justify-content: center;
   align-content: center;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "rutina tiktok"; }
-
-.contenedor {
-  justify-content: center;
-  align-content: center;
-  text-align: center; }
-
-.rutina {
-  align-self: center;
-  justify-self: center;
-  grid-area: rutina; }
-
-.tiktok {
-  width: 450px;
-  margin: 25px;
-  text-align: center;
-  grid-area: tiktok; }
+  main .presentacion .contenedor {
+    justify-content: center;
+    align-content: center;
+    text-align: center; }
+    main .presentacion .contenedor .cuerpo {
+      list-style: none;
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 5px;
+      padding: 10px; }
+  main .presentacion .rutina {
+    align-self: center;
+    justify-self: center;
+    grid-area: rutina; }
+  main .presentacion .tiktok {
+    width: 450px;
+    margin: 25px;
+    text-align: center;
+    grid-area: tiktok; }
 
 @media screen and (max-width: 768px) {
   .presentacion {
@@ -92,31 +94,13 @@ footer {
 @media screen and (max-width: 480px) {
   .presentacion {
     grid-template-columns: 1fr;
-    grid-template-areas: "rutina" "tiktok"; } }
+    grid-template-areas: "rutina" "tiktok"; }
+    .presentacion .contenedorCentral {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; } }
 
-.contenedorCentral {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-h3 {
-  background-color: rgba(250, 250, 250, 0.1);
-  text-align: center;
-  padding: 10px;
-  margin: 10px; }
-
-.gym {
-  width: 100%; }
-
-.cuerpo {
-  list-style: none;
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 5px;
-  padding: 10px; }
-
-/*planes y precios main*/
-.anime {
+planes y precios .anime {
   list-style: none;
   text-align: center;
   font-size: 1.5rem;
@@ -134,54 +118,56 @@ h3 {
   100% {
     opacity: 0; } }
 
-/* Nose a que pertenece*/
-.entrena {
+planes y precios .cuerpo {
+  list-style: none;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 10px; }
+
+planes y precios .entrena {
   list-style: none;
   font-size: 1.5rem;
   margin: 5px;
   text-align: center;
   padding: 10px; }
 
-.row {
-  margin: 0;
-  padding: 0; }
-
-h2 {
-  text-align: center;
-  font-weight: bold; }
-
-.equipo {
-  display: grid;
-  align-items: center;
-  width: auto;
-  padding: 10px;
-  justify-content: center;
-  align-content: center;
-  grid-template-columns: 1fr; }
-
-.form {
-  background-color: #808080;
-  text-align: center;
-  width: 30%;
-  margin: 10px;
-  padding: 10px;
-  justify-self: center;
-  align-self: center;
-  grid-template-columns: 1fr;
-  grid-template-areas: "equipo";
-  font-family: 'Bebas Neue', sans-serif;
-  font-family: 'Indie Flower', cursive;
-  font-family: 'Playfair Display', serif; }
-
-@media screen and (max-width: 768px) {
-  .equipo {
-    grid-template-columns: 1fr;
-    grid-template-areas: "equipo"; } }
-
-@media screen and (max-width: 480px) {
-  .equipo {
-    grid-template-columns: 1fr;
-    grid-template-areas: "equipo"; } }
-
 main {
   text-align: center; }
+  main .row {
+    margin: 0;
+    padding: 0; }
+    main .row .gym {
+      width: 100%; }
+    main .row h2 {
+      text-align: center;
+      font-weight: bold; }
+    main .row .equipo {
+      display: grid;
+      align-items: center;
+      width: auto;
+      padding: 10px;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: 1fr; }
+    main .row .form {
+      background-color: #808080;
+      text-align: center;
+      width: 30%;
+      margin: 10px;
+      padding: 10px;
+      justify-self: center;
+      align-self: center;
+      grid-template-columns: 1fr;
+      grid-template-areas: "equipo";
+      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Indie Flower', cursive;
+      font-family: 'Playfair Display', serif; }
+    @media screen and (max-width: 768px) {
+      main .row .equipo {
+        grid-template-columns: 1fr;
+        grid-template-areas: "equipo"; } }
+    @media screen and (max-width: 480px) {
+      main .row .equipo {
+        grid-template-columns: 1fr;
+        grid-template-areas: "equipo"; } }
